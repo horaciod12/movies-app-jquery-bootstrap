@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>My Movies</title>
+		<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Khula" rel="stylesheet">
+		<link rel="stylesheet" href="module-movies/css/style.css">
+	</head>
+
+	<body>
+		
+		<section class="container">
+
+			<h1>My Movies</h1>
+			
+			<section class="col-md-6">
+
+				<form id="my-form">
+					
+					<div class="form-group">
+						<label for="title">Movie Name: </label>
+						<input type="text" id="title" class="form-control" placeholder="Name">
+					</div>
+					
+					<div class="form-group">
+						<label for="description">Movie Description: </label>
+						<textarea id="description" class="form-control" placeholder="Description" rows="9"></textarea>
+					</div>
+
+				</form>
+
+
+				<div class="container-buttons">
+
+					<button id="add-btn" class="btn btn-primary">Add Movie</button>
+					<button id="show-btn" class="btn btn-success">Show Movies</button>
+					<button id="delete-btn" class="btn btn-danger">Delete Movies</button>
+					<button id="sort-btn" class="btn btn-warning">Sort Movies</button>
+					
+				</div>
+
+			</section>
+
+			<section class="col-md-6">
+
+				<div class="container-movies" id="movies">
+
+				</div>
+
+			</section>
+
+		</section>
+
+		<script src="vendor/js/jquery-3.2.1.min.js"></script>
+		<script src="module-movies/js/app.js"></script>
+
+	</body>
+
+</html>
